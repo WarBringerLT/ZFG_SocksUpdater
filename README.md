@@ -1,7 +1,8 @@
 # ZFG_SocksUpdater
 
 Provides **SOCKS4/SOCKS5** IP from Scraped websites. 
-Can also test all parsed IPs, separate them as "alive" ones for quick usage. (Creates a separate file)
+
+Can also test all parsed IPs, separate them as "alive" ones for quick usage. (Will create a separate file)
 
 # Used Material (References):
 
