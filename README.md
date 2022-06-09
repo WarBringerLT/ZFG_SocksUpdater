@@ -4,6 +4,7 @@ Provides **SOCKS4/SOCKS5** IP from Scraped websites.
 
 Can also test all parsed IPs, separate them as "alive" ones for quick usage. (Will create a separate file)
 
+Just run ``SocksUpdater.py`` file and it will do the rest :D
 # Used Material (References):
 
 Special thanks to (BELOW) for providing fresh IP lists.
