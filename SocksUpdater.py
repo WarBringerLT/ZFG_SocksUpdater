@@ -76,6 +76,7 @@ def Validate_IPv4(ipaddr):
 	except ValueError: return False # Not an IP
 
 def FlushToFile(IP_List, filename):
+	IP_List = sorted(set(IP_List))
 	with open(filename, 'w') as outputfile:
 		for IP in IP_List:
 			IP = IP.strip('\r').strip('\n')
@@ -134,7 +135,7 @@ Logger.log(f"[!!] Saved ({len(SOCKS5_NEW_IP_LIST)}) New-Proxy IPs to \"API_SOCKS
 Logger.log("[!] Attempting to scan Socks4 List of IPs!")
 
 def check_proxy(session, proxy, Type):
-    check = 'http://zfglt.ddns.net'
+    check = 'http://example.com'
     try:
         response = session.get(check, proxies={f'{Type}': f'{Type}://'+proxy}, timeout=5)
         status = response.status_code
